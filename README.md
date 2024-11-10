@@ -1,12 +1,8 @@
 # Train-Attention-Augmented Language Model (TAALM)
-
 ---
-
 Official Repository of "Train-Attention: Meta-Learning Where to Focus in Continual Knowledge Learning" accepted at NeurIPS 2024.
 
-Yeongbin Seo, Dongha Lee*, Jinyoung Yeo*
-
-\* indicates corresponding author.
+**Yeongbin Seo, Dongha Lee*, Jinyoung Yeo*** <sup>* indicates corresponding author.</sup>
 
 Paper Linck: https://arxiv.org/abs/2407.16920
 
@@ -147,4 +143,22 @@ Filter the Diffset, referring to the Appendix C.1.   `preprocess_temporalwiki_da
 
 ```bash
 python preprocess/preprocess_temporalwiki_dataset.py
+```
+
+---
+
+## Citation
+
+If you find this useful, please consider citing our paper:
+
+```
+@misc{seo2024trainattentionmetalearningfocuscontinual,
+      title={Train-Attention: Meta-Learning Where to Focus in Continual Knowledge Learning}, 
+      author={Yeongbin Seo and Dongha Lee and Jinyoung Yeo},
+      year={2024},
+      eprint={2407.16920},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.16920}, 
+}
 ```
