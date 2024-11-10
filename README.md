@@ -2,8 +2,7 @@
 ---
 Official Repository of "Train-Attention: Meta-Learning Where to Focus in Continual Knowledge Learning" accepted at NeurIPS 2024.
 
-**Yeongbin Seo, Dongha Lee*, Jinyoung Yeo*** 
-<sup>* indicates corresponding author.</sup>
+<br>Yeongbin Seo, Dongha Lee*, Jinyoung Yeo*</br> <sup>* indicates corresponding author.</sup>
 
 Paper Linck: https://arxiv.org/abs/2407.16920
 
