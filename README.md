@@ -1,9 +1,10 @@
 # Train-Attention-Augmented Language Model (TAALM) 
 ---
 Official Repository of "Train-Attention: Meta-Learning Where to Focus in Continual Knowledge Learning" accepted at <b>NeurIPS 2024</b>.
+
 <b>Yeongbin Seo, Dongha Lee*, Jinyoung Yeo*</b> <sup>* indicates corresponding author.</sup>
 
-Paper Link: https://arxiv.org/abs/2407.16920     <img src="./img/NeurIPS_logo_stacked.png" width="3%" height="3%" style="vertical-align: middle; margin-left: 10px;">
+Paper Link: https://arxiv.org/abs/2407.16920    
 
 Overview of Train-Attention-Augmented Language Model.
 <p align="center">
