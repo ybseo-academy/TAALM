@@ -1,11 +1,18 @@
-
 # Train-Attention-Augmented Language Model (TAALM)
 
 ---
 
+Official Repository of "Train-Attention: Meta-Learning Where to Focus in Continual Knowledge Learning" accepted at NeurIPS 2024.
+
+Yeongbin Seo, Dongha Lee*, Jinyoung Yeo*
+
+\* indicates corresponding author.
+
+Paper Linck: https://arxiv.org/abs/2407.16920
+
 **Abstract**
 
-Previous studies on continual knowledge learning (CKL) in Large Language Models (LLMs) have predominantly focused on approaches such as regularization, architectural modifications, and rehearsal techniques to mitigate catastrophic forgetting. However, these methods naively inherit the inefficiencies of standard training procedures, indiscriminately applying uniform weight across all tokens, which can lead to unnecessary parameter updates and increased forgetting. To address these shortcomings, we propose a novel CKL approach termed Train-Attention-Augmented Language Model (TAALM), which enhances learning efficiency by dynamically predicting and applying weights to tokens based on their usefulness. This method employs a meta-learning framework that optimizes token importance predictions, facilitating targeted knowledge updates and minimizing forgetting. Through experiments conducted on both newly introduced and established CKL benchmarks, TAALM proves the state-of-the-art performance upon the baselines, and also shows synergistic compatibility when integrated with the baselines. We observe that existing benchmarks do not clearly exhibit the trade-off between learning and retaining, therefore we propose a new benchmark, \textsc{LAMA-ckl}, to address this issue.
+Previous studies on continual knowledge learning (CKL) in Large Language Models (LLMs) have predominantly focused on approaches such as regularization, architectural modifications, and rehearsal techniques to mitigate catastrophic forgetting. However, these methods naively inherit the inefficiencies of standard training procedures, indiscriminately applying uniform weight across all tokens, which can lead to unnecessary parameter updates and increased forgetting. To address these shortcomings, we propose a novel CKL approach termed Train-Attention-Augmented Language Model (TALM), which enhances learning efficiency by dynamically predicting and applying weights to tokens based on their usefulness. This method employs a meta-learning framework that optimizes token importance predictions, facilitating targeted knowledge updates and minimizing forgetting. Through experiments conducted on both newly introduced and established CKL benchmarks, TALM proves the state-of-the-art performance upon the baselines, and also shows synergistic compatibility when integrated with the baselines. We observe that existing benchmarks do not clearly exhibit the trade-off between learning and retaining, therefore we propose a new benchmark, \textsc{LAMA-ckl}, to address this issue.
 
 # Installation
 
@@ -106,7 +113,7 @@ TemporalWiki : `observation_twiki.ipynb`
 
 We provide LAMA-ckl dataset which is tailored to evaluate Llama2-7B and TinyLlama-1.1B model with QLoRA and K-Adpater. But **LAMA-ckl** benchmark can be tailored for any baseline models. We present our pipeline for this. Execute the following step.
 
-1) Download LAMA dataset from   [https://github.com/facebookresearch/LAMA](https://github.com/facebookresearch/LAMA)
+1) Download LAMA dataset from   https://github.com/facebookresearch/LAMA
 
 ```bash
 wget https://dl.fbaipublicfiles.com/LAMA/data.zip
@@ -124,7 +131,7 @@ unzip it into `/data/LAMA`  directory
 
 ---
 
-First, download TemporalWiki dataset from [https://github.com/joeljang/temporalwiki/tree/main](https://github.com/joeljang/temporalwiki/tree/main) .
+First, download TemporalWiki dataset from https://github.com/joeljang/temporalwiki/tree/main .
 
 ```bash
 wget https://huggingface.co/datasets/seonghyeonye/TemporalWiki/resolve/main/Wikipedia_Full.zip

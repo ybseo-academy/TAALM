@@ -441,15 +441,14 @@ class AdapterBlock(nn.Module):
         feed_forward_hidden_states = self.mlp(hidden_states)
         # residual connection
         hidden_states =  feed_forward_hidden_states
-        hidden_states = residual + feed_forward_hidden_states
+        # hidden_states = residual + feed_forward_hidden_states
 
         if use_cache:
             outputs = (hidden_states,) + outputs
         else:
             outputs = (hidden_states,) + outputs[1:]
 
-        return outputs  # hidden_states, present, (attentions, cross_attentions)
-
+        return outputs 
 
 
 GPT2_START_DOCSTRING = r"""
