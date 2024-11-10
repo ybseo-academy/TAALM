@@ -1,17 +1,16 @@
-# Train-Attention-Augmented Language Model (TAALM) <p align="right">
-  <img src="./img/NeurIPS_logo_stacked.png" width="10%" height="10%">
-</p>
+# Train-Attention-Augmented Language Model (TAALM) 
 ---
 Official Repository of "Train-Attention: Meta-Learning Where to Focus in Continual Knowledge Learning" accepted at <b>NeurIPS 2024</b>.
 <b>Yeongbin Seo, Dongha Lee*, Jinyoung Yeo*</b> <sup>* indicates corresponding author.</sup>
 
-Paper Linck: https://arxiv.org/abs/2407.16920
+Paper Link: https://arxiv.org/abs/2407.16920     <img src="./img/NeurIPS_logo_stacked.png" width="3%" height="3%" style="vertical-align: middle; margin-left: 10px;">
 
 Overview of Train-Attention-Augmented Language Model.
 <p align="center">
   <img src="./img/train-attention-nuerips2024-poster.png" width="100%" height="80%">
 </p>
 
+---
 **Abstract**
 
 Previous studies on continual knowledge learning (CKL) in Large Language Models (LLMs) have predominantly focused on approaches such as regularization, architectural modifications, and rehearsal techniques to mitigate catastrophic forgetting. However, these methods naively inherit the inefficiencies of standard training procedures, indiscriminately applying uniform weight across all tokens, which can lead to unnecessary parameter updates and increased forgetting. To address these shortcomings, we propose a novel CKL approach termed Train-Attention-Augmented Language Model (TALM), which enhances learning efficiency by dynamically predicting and applying weights to tokens based on their usefulness. This method employs a meta-learning framework that optimizes token importance predictions, facilitating targeted knowledge updates and minimizing forgetting. Through experiments conducted on both newly introduced and established CKL benchmarks, TALM proves the state-of-the-art performance upon the baselines, and also shows synergistic compatibility when integrated with the baselines. We observe that existing benchmarks do not clearly exhibit the trade-off between learning and retaining, therefore we propose a new benchmark, \textsc{LAMA-ckl}, to address this issue.
